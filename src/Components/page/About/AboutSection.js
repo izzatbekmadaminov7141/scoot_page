@@ -1,5 +1,5 @@
 import React from "react";
-
+import picture from "../../../Picture/code.webp";
 function AboutSection() {
   return (
     <>
@@ -17,12 +17,12 @@ function AboutSection() {
         </div>
         <p>
           Dasturlashni siz kelaajakni o'zgartirish uchun o'rganing va bu sizning
-          qo'lingizdan keladi.{" "}
+          qo'lingizdan keladi.
         </p>
         <button>About US</button>
       </div>
       <div className="image">
-      <img src="" alt="" />
+        <img src={picture} alt="code javascript codes" />
       </div>
     </>
   );
