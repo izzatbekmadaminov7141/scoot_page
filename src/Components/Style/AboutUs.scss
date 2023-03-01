@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+@mixin d-flex($flex) {
+  display: flex;
+  justify-content: $flex;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+.AboutSection {
+  @include d-flex(space-between);
+  .description {
+    width: 50%;
+    line-height: 1.5;
+    color: #fff;
+    h2 {
+      font-size: 100px;
+      span {
+        color: tomato;
+      }
+    }
+    p {
+      width: 70%;
+      font-size: 25px;
+    }
+  }
+  .image {
+    width: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+    @include d-flex(end);
+    img {
+      width: 80%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  .btn {
+    padding: 20px 40px;
+    font-size: 25px;
+    margin: 10px 0;
+    border: 5px solid tomato;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.benefits {
+  @include d-flex(space-between);
+  margin-top: 100px;
+  .image {
+    width: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+    @include d-flex(start);
+    img {
+      width: 80%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  .description {
+    width: 50%;
+    h2 {
+      font-size: 50px;
+      color: #fff;
+    }
+    h3 {
+      width: 70%;
+      background-color: tomato;
+      margin: 10px 0;
+      padding: 15px;
+      transform: rotate(-5deg);
+      clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+      border-left: 5px solid #fff;
+    }
+  }
+}
